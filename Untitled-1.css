@@ -1,0 +1,85 @@
+.container {
+    width: 1000px;
+    height: 1000px;
+    position: relative;
+    display: block;
+}
+
+.circle {
+    width:15%;
+    height: 15%;
+    border-radius: 50%;
+    background-color: red;
+    position:absolute;
+    z-index: 1;
+}
+
+.top-left{
+    top: 28%;
+    right: 58%;
+}
+
+.top-left:hover {
+    background-color: sienna ;
+    z-index: 3;
+}
+
+.top-right {
+    top: 28%;
+    right: 28%;
+}
+
+.top-right:hover {
+    background-color: green;
+    z-index: 3;
+}
+
+.bottom-left {
+    top: 58%;
+    right: 58%;
+}
+
+.bottom-left:hover {
+    background-color: hotpink;
+    z-index: 3;
+}
+
+.bottom-right {
+    top: 58%;
+    right: 28%;
+}
+
+.bottom-right:hover{
+    background-color: indigo;
+    z-index: 3;
+}
+
+.big-square {
+    width: 30%;
+    height: 30%;
+    background-color: mediumaquamarine;
+    position: absolute;
+    top: 35%;
+    right: 35%;
+    z-index: 2;
+}
+
+.small-square {
+    width: 50%;
+    height: 50%;
+    border-radius: 10%;
+    background-color: goldenrod;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    z-index: 3;
+}
+
+.big-square:hover {
+    background-color: midnightblue;
+    z-index: 4;
+}
+
+.big-square:hover > .small-square {
+    display: none;
+}
